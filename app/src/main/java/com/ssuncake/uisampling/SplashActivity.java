@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 
+// 주석주석주석
+
 public class SplashActivity extends Activity {
     boolean isStatus = true;
     @Override

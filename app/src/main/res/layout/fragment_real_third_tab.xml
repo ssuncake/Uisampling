@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ssuncake.uisampling.MonitorFragment">
+    tools:context="com.ssuncake.uisampling.RealThirdTabFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Monitoring"
-        android:id="@+id/textView2"
+        android:text="Third"
+        android:id="@+id/textView"
         android:layout_gravity="center" />
 </FrameLayout>

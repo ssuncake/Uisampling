@@ -28,18 +28,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+              setContentView(R.layout.activity_main);
 
         tabHost = (FragmentTabHost) findViewById(R.id.tabHost);
 
         tabHost.setup(MainActivity.this, getSupportFragmentManager(), android.R.id.tabcontent);
-
-
-//
-//        tabHost.addTab(tabHost.newTabSpec(TAG[0]).setIndicator(getTabWiget(0)),mClass[0],null);
-//        tabHost.addTab(tabHost.newTabSpec(TAG[1]).setIndicator(getTabWiget(1)),mClass[1],null);
-//        tabHost.addTab(tabHost.newTabSpec(TAG[2]).setIndicator(getTabWiget(2)),mClass[2],null);
-//        tabHost.addTab(tabHost.newTabSpec(TAG[3]).setIndicator(getTabWiget(3)),mClass[3],null);
 
 
         mFragmentList = new ArrayList<Fragment>();
@@ -47,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         for (int i = 0; i < 4; i++) {
             TabHost.TabSpec tabSpec = tabHost.newTabSpec(TAG[i]).setIndicator(getTabWiget(i));
-                    tabHost.addTab(tabSpec, mClass[i],null);
+            tabHost.addTab(tabSpec, mClass[i], null);
             mFragmentList.add(mFragment[i]);
         }
     }

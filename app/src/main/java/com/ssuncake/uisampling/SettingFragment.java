@@ -29,11 +29,13 @@ public class SettingFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_setting, container, false);
-        for(int i = 0; i<8;i++){
-            items.add(sitems[i]);
-        }
-        ArrayAdapter<String> adapter;
-        adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, items);
+
+            for (int i = 0; i < 8; i++) {
+                items.add(sitems[i]);
+            }
+
+        final ArrayAdapter<String> adapter;
+        adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, items);
 
         ListView list = (ListView) view.findViewById(R.id.listView);
         list.setAdapter(adapter);

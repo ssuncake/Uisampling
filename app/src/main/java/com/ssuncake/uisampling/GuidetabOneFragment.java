@@ -12,10 +12,10 @@ import android.widget.ImageView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Realtime_main_Fragment extends Fragment {
-    ImageView imageView;
+public class GuidetabOneFragment extends Fragment {
 
-    public Realtime_main_Fragment() {
+    ImageView imageView;
+    public GuidetabOneFragment() {
         // Required empty public constructor
     }
 
@@ -24,8 +24,8 @@ public class Realtime_main_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_realtime_main_, container, false);
-        imageView = (ImageView)view.findViewById(R.id.imageView_realMain);
+        View view =  inflater.inflate(R.layout.fragment_guidetab_one, container, false);
+        imageView = (ImageView)view.findViewById(R.id.imageview_guide_t);
         return view;
     }
 

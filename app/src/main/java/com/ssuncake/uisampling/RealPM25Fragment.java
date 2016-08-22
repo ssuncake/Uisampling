@@ -12,10 +12,13 @@ import android.widget.ImageView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Realtime_main_Fragment extends Fragment {
-    ImageView imageView;
+public class RealPM25Fragment extends Fragment {
+ImageView imageview;
 
-    public Realtime_main_Fragment() {
+    private ViewGroup graphView;
+
+
+    public RealPM25Fragment() {
         // Required empty public constructor
     }
 
@@ -24,9 +27,13 @@ public class Realtime_main_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_realtime_main_, container, false);
-        imageView = (ImageView)view.findViewById(R.id.imageView_realMain);
+      View view = inflater.inflate(R.layout.fragment_real_pm25, container, false);
+        imageview = (ImageView) view.findViewById(R.id.imageView);
+        imageview.setImageResource(R.drawable.button);
+
         return view;
     }
+
+
 
 }

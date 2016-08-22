@@ -13,7 +13,6 @@ import android.view.ViewGroup;
  */
 public class RealPM10Fragment extends Fragment {
 
-
     public RealPM10Fragment() {
         // Required empty public constructor
     }
